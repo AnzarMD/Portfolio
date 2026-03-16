@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammad Anzar — Software Developer & AI Engineer based in Bengaluru." />
+  <title>Mohammad Anzar — Software Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div id="progress-bar"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <span class="bracket">[</span> M.Anzar <span class="bracket">]</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="ln">01.</span> About</a></li>
+      <li><a href="#skills"><span class="ln">02.</span> Skills</a></li>
+      <li><a href="#projects"><span class="ln">03.</span> Projects</a></li>
+      <li><a href="#achievements"><span class="ln">04.</span> Achievements</a></li>
+      <li><a href="#contact"><span class="ln">05.</span> Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-hire">Hire Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Open to Opportunities
+      </div>
+      <p class="hero-eyebrow"><span class="comment">// based in Bengaluru, KA</span></p>
+      <h1 class="hero-name">
+        Mohammad
+        <span class="under">Anzar<span class="vi">.</span></span>
+      </h1>
+      <p class="hero-role">Software Developer &amp; <span>AI Engineer</span></p>
+      <p class="hero-desc">
+        Building scalable distributed systems and intelligent applications — from microservices food delivery platforms to privacy-preserving federated learning in healthcare.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects →</a>
+        <a href="#contact" class="btn-outline">Let's Talk ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="tb-dot r"></span>
+          <span class="tb-dot y"></span>
+          <span class="tb-dot g"></span>
+          <span class="terminal-filename">developer.json</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-obj">{</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"name"</span><span class="t-obj">:</span> <span class="t-str">"Mohammad Anzar"</span><span class="t-obj">,</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"role"</span><span class="t-obj">:</span> <span class="t-str">"Software Developer"</span><span class="t-obj">,</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"cgpa"</span><span class="t-obj">:</span> <span class="t-num">9.3</span><span class="t-obj">,</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"stack"</span><span class="t-obj">:</span> <span class="t-obj">[</span><span class="t-str">"Spring Boot"</span><span class="t-obj">,</span> <span class="t-str">"MERN"</span><span class="t-obj">,</span> <span class="t-str">"AI/ML"</span><span class="t-obj">],</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"focus"</span><span class="t-obj">:</span> <span class="t-str">"Microservices &amp; AI"</span><span class="t-obj">,</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"location"</span><span class="t-obj">:</span> <span class="t-str">"Bengaluru, IN"</span><span class="t-obj">,</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"available"</span><span class="t-obj">:</span> <span class="t-bool">true</span></div>
+          <div class="t-line"><span class="t-obj">}</span><span class="t-cursor"></span></div>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-n"><span class="hctr" data-t="93">0</span><span style="font-size:0.6em;color:var(--v3)">%</span></div>
+          <div class="hstat-l">CGPA</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n"><span class="hctr" data-t="500">0</span><span style="font-size:0.6em;color:var(--v3)">+</span></div>
+          <div class="hstat-l">DSA Solved</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n"><span class="hctr" data-t="3">0</span></div>
+          <div class="hstat-l">Projects</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="si">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Who I Am</div>
+        <h2 class="sec-title">About <span class="vi">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Mohammad Anzar</strong>, a software developer based in
+            <span class="hl">Bengaluru, Karnataka</span>, pursuing a B.Tech in Information Science
+            at RNS Institute of Technology (CGPA: 9.3/10). I build things at the intersection of
+            <strong>distributed systems</strong>, <strong>full-stack engineering</strong>, and <strong>AI/ML</strong>.
+          </p>
+          <p>
+            My recent work spans designing <strong>microservices architectures</strong> with Spring Boot,
+            building <strong>real-time systems</strong> with WebSockets, and developing
+            <strong>privacy-preserving ML pipelines</strong> for healthcare. I care deeply about
+            writing clean, scalable, and production-ready code.
+          </p>
+          <p>
+            Outside of work, I compete in <strong>DSA competitions</strong>, win project hackathons,
+            and design interfaces in <strong>Figma</strong>. I bring both backend depth and a
+            product-thinking mindset to every project.
+          </p>
+          <!-- Social links -->
+          <div class="social-row">
+            <a href="https://linkedin.com" target="_blank" class="social-btn">
+              <span class="s-ico">in</span> LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" class="social-btn">
+              <span class="s-ico">gh</span> GitHub
+            </a>
+            <a href="https://leetcode.com" target="_blank" class="social-btn">
+              <span class="s-ico">lc</span> LeetCode
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal d2">
+          <div class="info-card">
+            <div class="ic-label">Education</div>
+            <div class="edu-row">
+              <div class="edu-school">RNS Institute of Technology</div>
+              <div class="edu-deg">B.Tech Information Science &amp; Engineering</div>
+              <div class="edu-badges">
+                <span class="badge">CGPA 9.3</span>
+                <span class="badge">Expected 2027</span>
+              </div>
+            </div>
+            <div class="edu-row" style="margin-top:16px">
+              <div class="edu-school">Burn Hall School</div>
+              <div class="edu-deg">Senior Secondary (Class XII)</div>
+              <div class="edu-badges">
+                <span class="badge">92.6%</span>
+                <span class="badge">2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic-label">Core Coursework</div>
+            <div class="course-chips">
+              <span class="chip">DSA</span>
+              <span class="chip">OOP</span>
+              <span class="chip">Operating Systems</span>
+              <span class="chip">Computer Networks</span>
+              <span class="chip">DBMS</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic-label">Reach Me</div>
+            <div class="reach-links">
+              <a href="mailto:md10anzar@gmail.com" class="reach-link">
+                <span class="ico">✉</span> md10anzar@gmail.com
+              </a>
+              <a href="tel:+916006520285" class="reach-link">
+                <span class="ico">📞</span> +91 6006520285
+              </a>
+              <span class="reach-link">
+                <span class="ico">📍</span> Bengaluru, Karnataka
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="si">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Expertise</div>
+        <h2 class="sec-title">Technical <span class="vi">Skills</span></h2>
+      </div>
+      <div class="skills-layout">
+
+        <div class="skill-group reveal">
+          <div class="sg-header"><span class="sg-icon">💻</span><span class="sg-title">Languages</span></div>
+          <div class="sg-items">
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Java</span><span class="sg-item-pct">90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="90"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Python</span><span class="sg-item-pct">88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="88"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">JavaScript</span><span class="sg-item-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">C++</span><span class="sg-item-pct">78%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal d1">
+          <div class="sg-header"><span class="sg-icon">🧩</span><span class="sg-title">Frameworks</span></div>
+          <div class="sg-items">
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Spring Boot</span><span class="sg-item-pct">88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="88"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Spring Data JPA / Hibernate</span><span class="sg-item-pct">83%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="83"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">React.js</span><span class="sg-item-pct">86%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="86"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Node.js / Express.js</span><span class="sg-item-pct">84%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="84"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal d2">
+          <div class="sg-header"><span class="sg-icon">⚙️</span><span class="sg-title">Technologies</span></div>
+          <div class="sg-items">
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Microservices Architecture</span><span class="sg-item-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">REST APIs</span><span class="sg-item-pct">90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="90"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">WebSockets</span><span class="sg-item-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Redis</span><span class="sg-item-pct">75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal d1">
+          <div class="sg-header"><span class="sg-icon">🗄️</span><span class="sg-title">Databases</span></div>
+          <div class="sg-items">
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">PostgreSQL</span><span class="sg-item-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">MongoDB</span><span class="sg-item-pct">83%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="83"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">MySQL</span><span class="sg-item-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal d2">
+          <div class="sg-header"><span class="sg-icon">🔧</span><span class="sg-title">Tools &amp; DevOps</span></div>
+          <div class="sg-items">
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Docker</span><span class="sg-item-pct">82%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="82"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">GitHub Actions (CI/CD)</span><span class="sg-item-pct">78%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="78"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Git / GitHub</span><span class="sg-item-pct">90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="90"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Maven / Postman</span><span class="sg-item-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal d3">
+          <div class="sg-header"><span class="sg-icon">🧠</span><span class="sg-title">Data &amp; ML</span></div>
+          <div class="sg-items">
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">PyTorch / TensorFlow</span><span class="sg-item-pct">83%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="83"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">Scikit-learn</span><span class="sg-item-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+            </div>
+            <div class="sg-item">
+              <div class="sg-item-top"><span class="sg-item-name">NumPy / Matplotlib</span><span class="sg-item-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="si">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Work</div>
+        <h2 class="sec-title">Selected <span class="vi">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- FEATURED -->
+        <div class="project-card featured reveal">
+          <div>
+            <div class="pc-num">01 / Featured</div>
+            <div class="pc-title">Distributed Food Delivery System<br><span style="color:var(--v3);font-size:0.65em;font-family:'JetBrains Mono',monospace;font-weight:400">// Swiggy Clone</span></div>
+            <div class="pc-tags" style="margin-top:14px">
+              <span class="pc-tag">Spring Boot</span>
+              <span class="pc-tag">Spring Cloud</span>
+              <span class="pc-tag">PostgreSQL</span>
+              <span class="pc-tag">WebSockets</span>
+              <span class="pc-tag">Docker</span>
+              <span class="pc-tag">JWT</span>
+            </div>
+          </div>
+          <div>
+            <p class="pc-desc">
+              A distributed food delivery platform built with Spring Boot microservices — individual services for users, restaurants, orders, payments, and delivery partners, wired together via API Gateway and service discovery. Features real-time order tracking over WebSockets, JWT-based authentication, and Docker containerisation for scalable fault-tolerant deployment across all services.
+            </p>
+            <div class="pc-tags" style="margin-top:16px">
+              <span class="pc-tag">Microservices</span>
+              <span class="pc-tag">API Gateway</span>
+              <span class="pc-tag">Real-time Tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card reveal d1">
+          <div class="pc-num">02</div>
+          <div class="pc-title">Secure Federated Learning for Healthcare</div>
+          <p class="pc-desc">
+            A federated learning pipeline using PyTorch and EfficientNet that trains models on distributed healthcare IoT data without centralising sensitive information. Implements Differential Privacy and Secure Aggregation for data confidentiality — achieving stable convergence on non-IID datasets across multiple clients.
+          </p>
+          <div class="pc-tags">
+            <span class="pc-tag">Python</span>
+            <span class="pc-tag">PyTorch</span>
+            <span class="pc-tag">EfficientNet</span>
+            <span class="pc-tag">Opacus</span>
+            <span class="pc-tag">Federated Learning</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card reveal d2">
+          <div class="pc-num">03</div>
+          <div class="pc-title">Hospital Management Software</div>
+          <p class="pc-desc">
+            A full-stack MERN hospital management system handling patient records, appointment scheduling, doctor availability, and billing. RESTful APIs with Node.js/Express, MongoDB for data persistence, role-based authentication, real-time updates, and analytics dashboards for data-driven administration.
+          </p>
+          <div class="pc-tags">
+            <span class="pc-tag">MongoDB</span>
+            <span class="pc-tag">Express.js</span>
+            <span class="pc-tag">React</span>
+            <span class="pc-tag">Node.js</span>
+            <span class="pc-tag">REST APIs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-cell reveal">
+        <div class="stat-num sctr" data-t="93">0</div>
+        <div class="stat-label">CGPA (× 10)</div>
+      </div>
+      <div class="stat-cell reveal d1">
+        <div class="stat-num sctr" data-t="500">0</div>
+        <div class="stat-label">DSA Problems Solved</div>
+      </div>
+      <div class="stat-cell reveal d2">
+        <div class="stat-num">1<span style="font-size:0.42em;vertical-align:super">st</span></div>
+        <div class="stat-label">Project Competition Win</div>
+      </div>
+      <div class="stat-cell reveal d3">
+        <div class="stat-num">2<span style="font-size:0.42em;vertical-align:super">nd</span></div>
+        <div class="stat-label">Solo DSA Hackathon</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="si">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Recognition</div>
+        <h2 class="sec-title">Achievements <span class="vi">&amp; Awards</span></h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card reveal">
+          <div class="ach-icon-wrap">🏆</div>
+          <div class="ach-num">// 01</div>
+          <div class="ach-title">Intra-College Project Winner</div>
+          <div class="ach-body">1st place in the Software Category of the Intra-College Project Competition for innovative software development and technical execution.</div>
+        </div>
+        <div class="ach-card reveal d1">
+          <div class="ach-icon-wrap">⚡</div>
+          <div class="ach-num">// 02</div>
+          <div class="ach-title">500+ DSA Problems</div>
+          <div class="ach-body">Solved 500+ problems on competitive programming platforms, building mastery in algorithms, dynamic programming, and graph theory.</div>
+        </div>
+        <div class="ach-card reveal d2">
+          <div class="ach-icon-wrap">🥈</div>
+          <div class="ach-num">// 03</div>
+          <div class="ach-title">2nd Place — Solo DSA Hackathon</div>
+          <div class="ach-body">Runner-up in a solo DSA hackathon, competing individually against teams with elite problem-solving under time pressure.</div>
+        </div>
+        <div class="ach-card reveal d3">
+          <div class="ach-icon-wrap">🎖️</div>
+          <div class="ach-num">// 04</div>
+          <div class="ach-title">Multiple Gold Medals</div>
+          <div class="ach-body">Awarded multiple Gold Medals for outstanding academic excellence at RNS Institute of Technology.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- TOOLS -->
+  <section id="tools">
+    <div class="si">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Toolkit</div>
+        <h2 class="sec-title">Tools &amp; <span class="vi">Platforms</span></h2>
+      </div>
+      <div class="tools-wrap">
+        <div class="tool-pill reveal">          <span class="tool-ico">🐳</span><div class="tool-info"><div class="tool-name">Docker</div>          <div class="tool-cat">Containerisation</div></div></div>
+        <div class="tool-pill reveal d1">       <span class="tool-ico">⚙️</span><div class="tool-info"><div class="tool-name">GitHub Actions</div>  <div class="tool-cat">CI / CD</div></div></div>
+        <div class="tool-pill reveal d2">       <span class="tool-ico">🐙</span><div class="tool-info"><div class="tool-name">Git / GitHub</div>    <div class="tool-cat">Version Control</div></div></div>
+        <div class="tool-pill reveal d3">       <span class="tool-ico">📬</span><div class="tool-info"><div class="tool-name">Postman</div>          <div class="tool-cat">API Testing</div></div></div>
+        <div class="tool-pill reveal d1">       <span class="tool-ico">🏗️</span><div class="tool-info"><div class="tool-name">Maven</div>            <div class="tool-cat">Build Tool</div></div></div>
+        <div class="tool-pill reveal d2">       <span class="tool-ico">⚡</span><div class="tool-info"><div class="tool-name">Redis</div>            <div class="tool-cat">Caching</div></div></div>
+        <div class="tool-pill reveal d3">       <span class="tool-ico">🎨</span><div class="tool-info"><div class="tool-name">Figma</div>            <div class="tool-cat">UI / UX Design</div></div></div>
+        <div class="tool-pill reveal d4">       <span class="tool-ico">🗄️</span><div class="tool-info"><div class="tool-name">PostgreSQL</div>       <div class="tool-cat">Relational DB</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="si">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Let's Connect</div>
+        <h2 class="sec-title">Get in <span class="vi">Touch</span></h2>
+      </div>
+      <div class="contact-layout">
+
+        <div class="reveal">
+          <p class="contact-tagline">
+            Open to internships, collaborations, and full-time roles. If you have an interesting problem to solve, I want to hear about it.
+          </p>
+          <div class="contact-details">
+            <a href="mailto:md10anzar@gmail.com" class="cd-row">
+              <div class="cd-icon">✉</div>
+              <div class="cd-info"><div class="cd-lbl">Email</div><div class="cd-val">md10anzar@gmail.com</div></div>
+              <div class="cd-arr">↗</div>
+            </a>
+            <a href="tel:+916006520285" class="cd-row">
+              <div class="cd-icon">📞</div>
+              <div class="cd-info"><div class="cd-lbl">Phone</div><div class="cd-val">+91 6006520285</div></div>
+              <div class="cd-arr">↗</div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="cd-row">
+              <div class="cd-icon" style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:600">in</div>
+              <div class="cd-info"><div class="cd-lbl">LinkedIn</div><div class="cd-val">linkedin.com/in/md-anzar</div></div>
+              <div class="cd-arr">↗</div>
+            </a>
+            <a href="https://github.com" target="_blank" class="cd-row">
+              <div class="cd-icon" style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:600">gh</div>
+              <div class="cd-info"><div class="cd-lbl">GitHub</div><div class="cd-val">github.com/md-anzar</div></div>
+              <div class="cd-arr">↗</div>
+            </a>
+            <div class="cd-row" style="cursor:default">
+              <div class="cd-icon">📍</div>
+              <div class="cd-info"><div class="cd-lbl">Location</div><div class="cd-val">Bengaluru, Karnataka, IN</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form reveal d2">
+          <div class="cf-top">
+            <div class="cf-top-title">Send a Message</div>
+            <div class="cf-top-sub">// powered by <span class="v">EmailJS</span> → delivers to md10anzar@gmail.com</div>
+          </div>
+          <div class="fg-2">
+            <div class="fg">
+              <label for="f-name">Your Name *</label>
+              <input type="text" id="f-name" placeholder="Jane Smith" />
+            </div>
+            <div class="fg">
+              <label for="f-phone">Phone Number</label>
+              <input type="tel" id="f-phone" placeholder="+91 xxxxxxxxxx" />
+            </div>
+          </div>
+          <div class="fg">
+            <label for="f-email">Your Email *</label>
+            <input type="email" id="f-email" placeholder="jane@company.com" />
+          </div>
+          <div class="fg">
+            <label for="f-message">Message *</label>
+            <textarea id="f-message" rows="5" placeholder="Tell me about the project or opportunity..."></textarea>
+          </div>
+          <div class="submit-row">
+            <button class="submit-btn" id="submit-btn" type="button">
+              <span id="btn-text">Send Message</span>
+              <span id="btn-ico">→</span>
+            </button>
+            <div class="submit-note">Typically replies within 24h</div>
+          </div>
+          <div id="form-success">✓ Message sent! Mohammad will get back to you within 24 hours.</div>
+          <div id="form-error"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="f-logo"><span class="br">[</span> M.Anzar <span class="br">]</span></div>
+    <div class="f-mid">Software Developer · Bengaluru, IN · 2026</div>
+    <div class="f-right">md10anzar@gmail.com</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
