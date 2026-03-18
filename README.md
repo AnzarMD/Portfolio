@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mohammad Anzar — Portfolio Website
 
 A violet-themed developer portfolio with live contact form via EmailJS.
@@ -104,3 +105,7 @@ To put the portfolio online for free:
 - **Add a LinkedIn** — add a new `.cd-row` in the contact section of `index.html`
 - **Add a GitHub** — same as above with your GitHub profile link
 - **Profile photo** — replace the terminal block in the hero with an `<img>` tag
+=======
+Mohammad Anzar — Portfolio
+Personal portfolio website built with HTML, CSS, and JavaScript.
+>>>>>>> 0531277fef8a1afdd8f952cebac2ddc759be4797
