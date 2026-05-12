@@ -1,33 +1,9 @@
 /* ═══════════════════════════════════════════════════
    form.js — EmailJS Contact Form Handler
 
-   SETUP: Replace the 4 values below, then save.
-
-   1. emailjs.com → Email Services → Add New Service
-      → Gmail → connect md10anzar@gmail.com → copy SERVICE_ID
-
-   2. Email Templates → New Template (notification to you):
-      To:      md10anzar@gmail.com
-      Subject: New Portfolio Message from {{from_name}}
-      Body:    Name: {{from_name}} | Email: {{from_email}}
-               Phone: {{from_phone}} | Message: {{message}}
-      → copy TEMPLATE_ID
-
-   3. Email Templates → New Template (auto-reply to sender):
-      To:      {{from_email}}
-      Subject: Thanks for reaching out, {{from_name}}!
-      Body:    Hi {{from_name}}, thanks for reaching out!
-               I've received your message and will get back
-               to you within 24 hours. — Mohammad Anzar
-      → copy AUTOREPLY_ID
-
-   4. Account → General → copy PUBLIC_KEY
+   Credentials are loaded from js/config.js (git-ignored).
+   See js/config.example.js for the template.
    ════════════════════════════════════════════════════ */
-
-var EMAILJS_SERVICE_ID = 'service_4k7vi9d';
-var EMAILJS_TEMPLATE_ID = 'template_t0limib';
-var EMAILJS_AUTOREPLY_ID = 'template_prhgmsq';
-var EMAILJS_PUBLIC_KEY = 'JbRKoa1HmXAbD4Fer';
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -39,8 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!btn) return;
 
+    /* Load keys from config.js (git-ignored) */
+    if (typeof EMAILJS_CONFIG === 'undefined') {
+        console.error('config.js not loaded — copy config.example.js → config.js and fill in your keys.');
+        return;
+    }
+
     if (typeof emailjs !== 'undefined') {
-        emailjs.init(EMAILJS_PUBLIC_KEY);
+        emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
     }
 
     function getVal(id) {
@@ -104,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return showError('Please enter a message.');
         }
 
-        if (EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID') {
-            return showError('EmailJS not configured yet. Open js/form.js and fill in your credentials.');
+        if (EMAILJS_CONFIG.SERVICE_ID === 'YOUR_SERVICE_ID') {
+            return showError('EmailJS not configured yet. Copy js/config.example.js → js/config.js and fill in your credentials.');
         }
 
         errorEl.style.display = 'none';
@@ -119,9 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
             reply_to: email
         };
 
-        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
+        emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, params)
             .then(function() {
-                return emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_AUTOREPLY_ID, params);
+                return emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.AUTOREPLY_ID, params);
             })
             .then(function() {
                 setLoading(false);
