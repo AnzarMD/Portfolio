@@ -1,1046 +1,1079 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Mohammad Anzar — Java Backend Developer & AI Integration Engineer based in Bengaluru."
-    />
+    <meta name="description" content="Mohammad Anzar — Java Backend Developer & AI Integration Engineer based in Bengaluru. Spring Boot microservices, RAG pipelines, and LLM integration." />
+    <meta name="author" content="Mohammad Anzar" />
+    <meta name="keywords" content="Mohammad Anzar, Java Backend Developer, Spring Boot, Microservices, Spring AI, RAG, LLM Integration, Bengaluru" />
     <title>Mohammad Anzar — Java Backend Developer</title>
+
+    <!-- NOTE: update the URLs below to your deployed domain (canonical, og:url, og:image) -->
+    <link rel="canonical" href="https://anzarmd.github.io/portfolio/" />
+
+    <!-- Open Graph (LinkedIn, Facebook, WhatsApp, Slack) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mohammad Anzar — Portfolio" />
+    <meta property="og:title" content="Mohammad Anzar — Java Backend Developer & AI Integration Engineer" />
+    <meta property="og:description" content="Building production-grade Spring Boot microservices and integrating LLMs, RAG pipelines, and Spring AI into scalable, cloud-native backend systems." />
+    <meta property="og:url" content="https://anzarmd.github.io/portfolio/" />
+    <meta property="og:image" content="https://anzarmd.github.io/portfolio/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mohammad Anzar — Java Backend Developer & AI Integration Engineer" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohammad Anzar — Java Backend Developer & AI Integration Engineer" />
+    <meta name="twitter:description" content="Building production-grade Spring Boot microservices and integrating LLMs, RAG pipelines, and Spring AI into scalable, cloud-native backend systems." />
+    <meta name="twitter:image" content="https://anzarmd.github.io/portfolio/og-image.png" />
+    <meta name="theme-color" content="#07060f" />
+
     <link rel="icon" type="image/svg+xml" href="download.svg" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  </head>
 
-  <body>
-    <canvas id="bg-canvas"></canvas>
+    <!-- Structured data: Person schema (SEO rich results) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Mohammad Anzar",
+            "jobTitle": "Java Backend Developer & AI Integration Engineer",
+            "email": "mailto:md10anzar@gmail.com",
+            "telephone": "+91-6006520285",
+            "url": "https://anzarmd.github.io/portfolio/",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "addressCountry": "IN"
+            },
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "RNS Institute of Technology"
+            },
+            "knowsAbout": [
+                "Java",
+                "Spring Boot",
+                "Spring Cloud",
+                "Microservices",
+                "Spring AI",
+                "RAG Pipelines",
+                "LLM Integration",
+                "Apache Kafka",
+                "Redis",
+                "Docker",
+                "Kubernetes"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/mohammad-anzar-99b963235/",
+                "https://github.com/AnzarMD",
+                "https://leetcode.com/u/anzar_10/"
+            ]
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
     <div id="progress-bar"></div>
 
     <!-- NAV -->
     <nav>
-      <a href="#hero" class="nav-logo">
-        <span class="bracket">[</span> M.Anzar <span class="bracket">]</span>
-      </a>
-      <ul class="nav-links">
-        <li>
-          <a href="#about"><span class="ln">01.</span> About</a>
-        </li>
-        <li>
-          <a href="#skills"><span class="ln">02.</span> Skills</a>
-        </li>
-        <li>
-          <a href="#projects"><span class="ln">03.</span> Projects</a>
-        </li>
-        <li>
-          <a href="#achievements"><span class="ln">04.</span> Achievements</a>
-        </li>
-        <li>
-          <a href="#contact"><span class="ln">05.</span> Contact</a>
-        </li>
-      </ul>
-      <a href="#contact" class="nav-hire">Hire Me</a>
+        <a href="#hero" class="nav-logo">
+            <span class="bracket">[</span> M.Anzar <span class="bracket">]</span>
+        </a>
+        <ul class="nav-links">
+            <li>
+                <a href="#about"><span class="ln">01.</span> About</a>
+            </li>
+            <li>
+                <a href="#skills"><span class="ln">02.</span> Skills</a>
+            </li>
+            <li>
+                <a href="#projects"><span class="ln">03.</span> Projects</a>
+            </li>
+            <li>
+                <a href="#achievements"><span class="ln">04.</span> Achievements</a>
+            </li>
+            <li>
+                <a href="#contact"><span class="ln">05.</span> Contact</a>
+            </li>
+        </ul>
+        <a href="#contact" class="nav-hire">Hire Me</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
     <!-- HERO -->
     <section id="hero">
-      <div class="hero-left">
-        <div class="hero-badge">
-          <span class="pulse"></span> Open to Opportunities
+        <div class="hero-left">
+            <div class="hero-badge">
+                <span class="pulse"></span> Open to Opportunities
+            </div>
+            <p class="hero-eyebrow">
+                <span class="comment">// based in Bengaluru, KA</span>
+            </p>
+            <h1 class="hero-name">
+                Mohammad
+                <span class="under">Anzar<span class="vi">.</span></span>
+            </h1>
+            <p class="hero-role">
+                Java Backend Developer &amp; <span>AI Integration Engineer</span>
+            </p>
+            <p class="hero-desc">
+                Engineering production-grade microservices with Spring Boot &amp;
+                Spring Cloud — and integrating LLMs, RAG pipelines, and Spring AI into
+                scalable, cloud-native backend systems.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View Projects →</a>
+                <a href="#contact" class="btn-outline">Let's Talk ↓</a>
+            </div>
         </div>
-        <p class="hero-eyebrow">
-          <span class="comment">// based in Bengaluru, KA</span>
-        </p>
-        <h1 class="hero-name">
-          Mohammad
-          <span class="under">Anzar<span class="vi">.</span></span>
-        </h1>
-        <p class="hero-role">
-          Java Backend Developer &amp; <span>AI Integration Engineer</span>
-        </p>
-        <p class="hero-desc">
-          Engineering production-grade microservices with Spring Boot &amp;
-          Spring Cloud — and integrating LLMs, RAG pipelines, and Spring AI into
-          scalable, cloud-native backend systems.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary">View Projects →</a>
-          <a href="#contact" class="btn-outline">Let's Talk ↓</a>
-        </div>
-      </div>
 
-      <div class="hero-right">
-        <div class="terminal">
-          <div class="terminal-bar">
-            <span class="tb-dot r"></span>
-            <span class="tb-dot y"></span>
-            <span class="tb-dot g"></span>
-            <span class="terminal-filename">developer.json</span>
-          </div>
-          <div class="terminal-body">
-            <div class="t-line"><span class="t-obj">{</span></div>
-            <div class="t-line">
-              &nbsp;&nbsp;<span class="t-key">"name"</span
-              ><span class="t-obj">:</span>
-              <span class="t-str">"Mohammad Anzar"</span
-              ><span class="t-obj">,</span>
+        <div class="hero-right">
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="tb-dot r"></span>
+                    <span class="tb-dot y"></span>
+                    <span class="tb-dot g"></span>
+                    <span class="terminal-filename">developer.json</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="t-line"><span class="t-obj">{</span></div>
+                    <div class="t-line">
+                        &nbsp;&nbsp;<span class="t-key">"name"</span><span class="t-obj">:</span>
+                        <span class="t-str">"Mohammad Anzar"</span><span class="t-obj">,</span>
+                    </div>
+                    <div class="t-line">
+                        &nbsp;&nbsp;<span class="t-key">"role"</span><span class="t-obj">:</span>
+                        <span class="t-str">"Java Backend Developer"</span><span class="t-obj">,</span>
+                    </div>
+                    <div class="t-line">
+                        &nbsp;&nbsp;<span class="t-key">"cgpa"</span><span class="t-obj">:</span> <span class="t-num">9.3</span><span class="t-obj">,</span>
+                    </div>
+                    <div class="t-line">
+                        &nbsp;&nbsp;<span class="t-key">"stack"</span><span class="t-obj">:</span> <span class="t-obj">[</span><span class="t-str">"Spring Boot"</span><span class="t-obj">,</span>
+                        <span class="t-str">"Microservices"</span><span class="t-obj">,</span>
+                        <span class="t-str">"Spring AI"</span><span class="t-obj">],</span>
+                    </div>
+                    <div class="t-line">
+                        &nbsp;&nbsp;<span class="t-key">"focus"</span><span class="t-obj">:</span>
+                        <span class="t-str">"Backend &amp; LLM Integration"</span><span class="t-obj">,</span>
+                    </div>
+                    <div class="t-line">
+                        &nbsp;&nbsp;<span class="t-key">"location"</span><span class="t-obj">:</span>
+                        <span class="t-str">"Bengaluru, IN"</span><span class="t-obj">,</span>
+                    </div>
+                    <div class="t-line">
+                        &nbsp;&nbsp;<span class="t-key">"available"</span><span class="t-obj">:</span> <span class="t-bool">true</span>
+                    </div>
+                    <div class="t-line">
+                        <span class="t-obj">}</span><span class="t-cursor"></span>
+                    </div>
+                </div>
             </div>
-            <div class="t-line">
-              &nbsp;&nbsp;<span class="t-key">"role"</span
-              ><span class="t-obj">:</span>
-              <span class="t-str">"Java Backend Developer"</span
-              ><span class="t-obj">,</span>
+            <div class="hero-stats">
+                <div class="hstat">
+                    <div class="hstat-n">
+                        <span class="hctr" data-t="93">0</span><span style="font-size: 0.6em; color: var(--v3)">%</span>
+                    </div>
+                    <div class="hstat-l">CGPA</div>
+                </div>
+                <div class="hstat">
+                    <div class="hstat-n">
+                        <span class="hctr" data-t="700">0</span><span style="font-size: 0.6em; color: var(--v3)">+</span>
+                    </div>
+                    <div class="hstat-l">DSA Solved</div>
+                </div>
+                <div class="hstat">
+                    <div class="hstat-n"><span class="hctr" data-t="6">0</span></div>
+                    <div class="hstat-l">Projects</div>
+                </div>
             </div>
-            <div class="t-line">
-              &nbsp;&nbsp;<span class="t-key">"cgpa"</span
-              ><span class="t-obj">:</span> <span class="t-num">9.3</span
-              ><span class="t-obj">,</span>
-            </div>
-            <div class="t-line">
-              &nbsp;&nbsp;<span class="t-key">"stack"</span
-              ><span class="t-obj">:</span> <span class="t-obj">[</span
-              ><span class="t-str">"Spring Boot"</span
-              ><span class="t-obj">,</span>
-              <span class="t-str">"Microservices"</span
-              ><span class="t-obj">,</span>
-              <span class="t-str">"Spring AI"</span
-              ><span class="t-obj">],</span>
-            </div>
-            <div class="t-line">
-              &nbsp;&nbsp;<span class="t-key">"focus"</span
-              ><span class="t-obj">:</span>
-              <span class="t-str">"Backend &amp; LLM Integration"</span
-              ><span class="t-obj">,</span>
-            </div>
-            <div class="t-line">
-              &nbsp;&nbsp;<span class="t-key">"location"</span
-              ><span class="t-obj">:</span>
-              <span class="t-str">"Bengaluru, IN"</span
-              ><span class="t-obj">,</span>
-            </div>
-            <div class="t-line">
-              &nbsp;&nbsp;<span class="t-key">"available"</span
-              ><span class="t-obj">:</span> <span class="t-bool">true</span>
-            </div>
-            <div class="t-line">
-              <span class="t-obj">}</span><span class="t-cursor"></span>
-            </div>
-          </div>
         </div>
-        <div class="hero-stats">
-          <div class="hstat">
-            <div class="hstat-n">
-              <span class="hctr" data-t="93">0</span
-              ><span style="font-size: 0.6em; color: var(--v3)">%</span>
-            </div>
-            <div class="hstat-l">CGPA</div>
-          </div>
-          <div class="hstat">
-            <div class="hstat-n">
-              <span class="hctr" data-t="600">0</span
-              ><span style="font-size: 0.6em; color: var(--v3)">+</span>
-            </div>
-            <div class="hstat-l">DSA Solved</div>
-          </div>
-          <div class="hstat">
-            <div class="hstat-n"><span class="hctr" data-t="6">0</span></div>
-            <div class="hstat-l">Projects</div>
-          </div>
-        </div>
-      </div>
 
-      <div class="hero-scroll">
-        <div class="hero-scroll-line"></div>
-        Scroll
-      </div>
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+            Scroll
+        </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
-      <div class="si">
-        <div class="sec-header reveal">
-          <div class="sec-eyebrow">Who I Am</div>
-          <h2 class="sec-title">About <span class="vi">Me</span></h2>
+        <div class="si">
+            <div class="sec-header reveal">
+                <div class="sec-eyebrow">Who I Am</div>
+                <h2 class="sec-title">About <span class="vi">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm <strong>Mohammad Anzar</strong>, a
+                        <strong>Java backend developer</strong> based in
+                        <span class="hl">Bengaluru, Karnataka</span>, pursuing a B.Tech in
+                        Information Science at RNS Institute of Technology (CGPA: 9.3/10).
+                        I specialise in building
+                        <strong>production-grade microservices</strong> with
+                        <strong>Spring Boot</strong>, <strong>Spring Cloud</strong>, and
+                        event-driven architectures using Kafka and Redis.
+                    </p>
+                    <p>
+                        Beyond backend systems, I integrate
+                        <strong>Large Language Models</strong> and
+                        <strong>AI capabilities</strong> into enterprise applications
+                        using <strong>Spring AI</strong>, <strong>RAG pipelines</strong>,
+                        and LLM orchestration — bringing intelligent, context-aware
+                        features into scalable backend services.
+                    </p>
+                    <p>
+                        I also have hands-on experience with
+                        <strong>machine learning</strong>, including federated learning
+                        and PyTorch-based pipelines. Outside of work, I compete in
+                        <strong>DSA competitions</strong>, win project hackathons, and
+                        bring both backend depth and a product-thinking mindset to every
+                        project.
+                    </p>
+                    <!-- Social links -->
+                    <div class="social-row">
+                        <a href="https://www.linkedin.com/in/mohammad-anzar-99b963235/" target="_blank" class="social-btn">
+                            <span class="s-ico">in</span> LinkedIn
+                        </a>
+                        <a href="https://github.com/AnzarMD" target="_blank" class="social-btn">
+                            <span class="s-ico">gh</span> GitHub
+                        </a>
+                        <a href="https://leetcode.com/u/anzar_10/" target="_blank" class="social-btn">
+                            <span class="s-ico">lc</span> LeetCode
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reveal d2">
+                    <div class="info-card">
+                        <div class="ic-label">Education</div>
+                        <div class="edu-row">
+                            <div class="edu-school">RNS Institute of Technology</div>
+                            <div class="edu-deg">
+                                B.Tech Information Science &amp; Engineering
+                            </div>
+                            <div class="edu-badges">
+                                <span class="badge">CGPA 9.3</span>
+                                <span class="badge">Expected 2027</span>
+                            </div>
+                        </div>
+                        <div class="edu-row" style="margin-top: 16px">
+                            <div class="edu-school">Burn Hall School</div>
+                            <div class="edu-deg">Senior Secondary (Class XII)</div>
+                            <div class="edu-badges">
+                                <span class="badge">92.6%</span>
+                                <span class="badge">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="ic-label">Core Coursework</div>
+                        <div class="course-chips">
+                            <span class="chip">DSA</span>
+                            <span class="chip">OOP</span>
+                            <span class="chip">Operating Systems</span>
+                            <span class="chip">Computer Networks</span>
+                            <span class="chip">DBMS</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="ic-label">Reach Me</div>
+                        <div class="reach-links">
+                            <a href="mailto:md10anzar@gmail.com" class="reach-link">
+                                <span class="ico">✉</span> md10anzar@gmail.com
+                            </a>
+                            <a href="tel:+916006520285" class="reach-link">
+                                <span class="ico">📞</span> +91 6006520285
+                            </a>
+                            <span class="reach-link">
+                                <span class="ico">📍</span> Bengaluru, Karnataka
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p>
-              I'm <strong>Mohammad Anzar</strong>, a
-              <strong>Java backend developer</strong> based in
-              <span class="hl">Bengaluru, Karnataka</span>, pursuing a B.Tech in
-              Information Science at RNS Institute of Technology (CGPA: 9.3/10).
-              I specialise in building
-              <strong>production-grade microservices</strong> with
-              <strong>Spring Boot</strong>, <strong>Spring Cloud</strong>, and
-              event-driven architectures using Kafka and Redis.
-            </p>
-            <p>
-              Beyond backend systems, I integrate
-              <strong>Large Language Models</strong> and
-              <strong>AI capabilities</strong> into enterprise applications
-              using <strong>Spring AI</strong>, <strong>RAG pipelines</strong>,
-              and LLM orchestration — bringing intelligent, context-aware
-              features into scalable backend services.
-            </p>
-            <p>
-              I also have hands-on experience with
-              <strong>machine learning</strong>, including federated learning
-              and PyTorch-based pipelines. Outside of work, I compete in
-              <strong>DSA competitions</strong>, win project hackathons, and
-              bring both backend depth and a product-thinking mindset to every
-              project.
-            </p>
-            <!-- Social links -->
-            <div class="social-row">
-              <a
-                href="https://www.linkedin.com/in/mohammad-anzar-99b963235/"
-                target="_blank"
-                class="social-btn"
-              >
-                <span class="s-ico">in</span> LinkedIn
-              </a>
-              <a
-                href="https://github.com/AnzarMD"
-                target="_blank"
-                class="social-btn"
-              >
-                <span class="s-ico">gh</span> GitHub
-              </a>
-              <a
-                href="https://leetcode.com/u/anzar_10/"
-                target="_blank"
-                class="social-btn"
-              >
-                <span class="s-ico">lc</span> LeetCode
-              </a>
-            </div>
-          </div>
-
-          <div class="reveal d2">
-            <div class="info-card">
-              <div class="ic-label">Education</div>
-              <div class="edu-row">
-                <div class="edu-school">RNS Institute of Technology</div>
-                <div class="edu-deg">
-                  B.Tech Information Science &amp; Engineering
-                </div>
-                <div class="edu-badges">
-                  <span class="badge">CGPA 9.3</span>
-                  <span class="badge">Expected 2027</span>
-                </div>
-              </div>
-              <div class="edu-row" style="margin-top: 16px">
-                <div class="edu-school">Burn Hall School</div>
-                <div class="edu-deg">Senior Secondary (Class XII)</div>
-                <div class="edu-badges">
-                  <span class="badge">92.6%</span>
-                  <span class="badge">2023</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="ic-label">Core Coursework</div>
-              <div class="course-chips">
-                <span class="chip">DSA</span>
-                <span class="chip">OOP</span>
-                <span class="chip">Operating Systems</span>
-                <span class="chip">Computer Networks</span>
-                <span class="chip">DBMS</span>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="ic-label">Reach Me</div>
-              <div class="reach-links">
-                <a href="mailto:md10anzar@gmail.com" class="reach-link">
-                  <span class="ico">✉</span> md10anzar@gmail.com
-                </a>
-                <a href="tel:+916006520285" class="reach-link">
-                  <span class="ico">📞</span> +91 6006520285
-                </a>
-                <span class="reach-link">
-                  <span class="ico">📍</span> Bengaluru, Karnataka
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <div class="sec-divider"></div>
 
     <!-- SKILLS -->
     <section id="skills">
-      <div class="si">
-        <div class="sec-header reveal">
-          <div class="sec-eyebrow">Expertise</div>
-          <h2 class="sec-title">Technical <span class="vi">Skills</span></h2>
+        <div class="si">
+            <div class="sec-header reveal">
+                <div class="sec-eyebrow">Expertise</div>
+                <h2 class="sec-title">Technical <span class="vi">Skills</span></h2>
+            </div>
+            <div class="skills-layout">
+                <div class="skill-group reveal">
+                    <div class="sg-header">
+                        <span class="sg-icon">💻</span><span class="sg-title">Languages</span>
+                    </div>
+                    <div class="sg-items">
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Java</span><span class="sg-item-pct">90%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Python</span><span class="sg-item-pct">88%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="88"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">C++</span><span class="sg-item-pct">78%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="78"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">JavaScript</span><span class="sg-item-pct">85%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal d1">
+                    <div class="sg-header">
+                        <span class="sg-icon">🧩</span><span class="sg-title">Frameworks</span>
+                    </div>
+                    <div class="sg-items">
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Spring Boot</span><span class="sg-item-pct">90%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Spring Data JPA / Hibernate</span><span class="sg-item-pct">85%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">React.js</span><span class="sg-item-pct">86%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="86"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Node.js / Express.js</span><span class="sg-item-pct">84%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="84"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal d2">
+                    <div class="sg-header">
+                        <span class="sg-icon">⚙️</span><span class="sg-title">Technologies</span>
+                    </div>
+                    <div class="sg-items">
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">REST APIs</span><span class="sg-item-pct">90%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Microservices Architecture</span><span class="sg-item-pct">88%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="88"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">WebSockets</span><span class="sg-item-pct">80%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="80"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Kafka</span><span class="sg-item-pct">82%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="82"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Redis</span><span class="sg-item-pct">78%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="78"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">RabbitMQ</span><span class="sg-item-pct">75%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal d1">
+                    <div class="sg-header">
+                        <span class="sg-icon">🔧</span><span class="sg-title">Tools / Platforms</span>
+                    </div>
+                    <div class="sg-items">
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Git / GitHub</span><span class="sg-item-pct">90%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Docker</span><span class="sg-item-pct">85%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Kubernetes</span><span class="sg-item-pct">78%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="78"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Linux</span><span class="sg-item-pct">82%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="82"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">GitHub Actions (CI/CD)</span><span class="sg-item-pct">80%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="80"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">JUnit / Agile</span><span class="sg-item-pct">78%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal d2">
+                    <div class="sg-header">
+                        <span class="sg-icon">🗄️</span><span class="sg-title">Databases</span>
+                    </div>
+                    <div class="sg-items">
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">PostgreSQL</span><span class="sg-item-pct">85%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">MySQL</span><span class="sg-item-pct">83%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="83"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">MongoDB</span><span class="sg-item-pct">50%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal d3">
+                    <div class="sg-header">
+                        <span class="sg-icon">🧠</span><span class="sg-title">AI &amp; Data Systems</span>
+                    </div>
+                    <div class="sg-items">
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Spring AI</span><span class="sg-item-pct">82%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="82"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">LLM Integration / RAG</span><span class="sg-item-pct">80%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="80"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">PyTorch</span><span class="sg-item-pct">83%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="83"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">Scikit-learn</span><span class="sg-item-pct">80%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="80"></div>
+                            </div>
+                        </div>
+                        <div class="sg-item">
+                            <div class="sg-item-top">
+                                <span class="sg-item-name">NumPy / Matplotlib</span><span class="sg-item-pct">85%</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skills-layout">
-          <div class="skill-group reveal">
-            <div class="sg-header">
-              <span class="sg-icon">💻</span
-              ><span class="sg-title">Languages</span>
-            </div>
-            <div class="sg-items">
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Java</span
-                  ><span class="sg-item-pct">90%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="90"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Python</span
-                  ><span class="sg-item-pct">88%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="88"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">C++</span
-                  ><span class="sg-item-pct">78%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="78"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">JavaScript</span
-                  ><span class="sg-item-pct">85%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="85"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-group reveal d1">
-            <div class="sg-header">
-              <span class="sg-icon">🧩</span
-              ><span class="sg-title">Frameworks</span>
-            </div>
-            <div class="sg-items">
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Spring Boot</span
-                  ><span class="sg-item-pct">90%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="90"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Spring Data JPA / Hibernate</span
-                  ><span class="sg-item-pct">85%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="85"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">React.js</span
-                  ><span class="sg-item-pct">86%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="86"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Node.js / Express.js</span
-                  ><span class="sg-item-pct">84%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="84"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-group reveal d2">
-            <div class="sg-header">
-              <span class="sg-icon">⚙️</span
-              ><span class="sg-title">Technologies</span>
-            </div>
-            <div class="sg-items">
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">REST APIs</span
-                  ><span class="sg-item-pct">90%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="90"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Microservices Architecture</span
-                  ><span class="sg-item-pct">88%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="88"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">WebSockets</span
-                  ><span class="sg-item-pct">80%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="80"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Kafka</span
-                  ><span class="sg-item-pct">82%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="82"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Redis</span
-                  ><span class="sg-item-pct">78%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="78"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">RabbitMQ</span
-                  ><span class="sg-item-pct">75%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="75"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-group reveal d1">
-            <div class="sg-header">
-              <span class="sg-icon">🔧</span
-              ><span class="sg-title">Tools / Platforms</span>
-            </div>
-            <div class="sg-items">
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Git / GitHub</span
-                  ><span class="sg-item-pct">90%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="90"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Docker</span
-                  ><span class="sg-item-pct">85%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="85"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Kubernetes</span
-                  ><span class="sg-item-pct">78%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="78"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Linux</span
-                  ><span class="sg-item-pct">82%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="82"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">GitHub Actions (CI/CD)</span
-                  ><span class="sg-item-pct">80%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="80"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">JUnit / Agile</span
-                  ><span class="sg-item-pct">78%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="78"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-group reveal d2">
-            <div class="sg-header">
-              <span class="sg-icon">🗄️</span
-              ><span class="sg-title">Databases</span>
-            </div>
-            <div class="sg-items">
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">PostgreSQL</span
-                  ><span class="sg-item-pct">85%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="85"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">MySQL</span
-                  ><span class="sg-item-pct">83%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="83"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">MongoDB</span
-                  ><span class="sg-item-pct">50%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="50"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-group reveal d3">
-            <div class="sg-header">
-              <span class="sg-icon">🧠</span
-              ><span class="sg-title">AI &amp; Data Systems</span>
-            </div>
-            <div class="sg-items">
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Spring AI</span
-                  ><span class="sg-item-pct">82%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="82"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">LLM Integration / RAG</span
-                  ><span class="sg-item-pct">80%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="80"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">PyTorch</span
-                  ><span class="sg-item-pct">83%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="83"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">Scikit-learn</span
-                  ><span class="sg-item-pct">80%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="80"></div>
-                </div>
-              </div>
-              <div class="sg-item">
-                <div class="sg-item-top">
-                  <span class="sg-item-name">NumPy / Matplotlib</span
-                  ><span class="sg-item-pct">85%</span>
-                </div>
-                <div class="bar-track">
-                  <div class="bar-fill" data-w="85"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <div class="sec-divider"></div>
 
     <!-- PROJECTS -->
     <section id="projects">
-      <div class="si">
-        <div class="sec-header reveal">
-          <div class="sec-eyebrow">Work</div>
-          <h2 class="sec-title">Selected <span class="vi">Projects</span></h2>
-        </div>
-        <div class="projects-grid">
-          <!-- FEATURED -->
-          <div class="project-card featured reveal">
-            <div>
-              <div class="pc-num">01 / Featured</div>
-              <div class="pc-title">
-                Distributed Food Delivery System<br /><span
-                  style="
+        <div class="si">
+            <div class="sec-header reveal">
+                <div class="sec-eyebrow">Work</div>
+                <h2 class="sec-title">Selected <span class="vi">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- FEATURED -->
+                <div class="project-card featured reveal">
+                    <div>
+                        <div class="pc-num">01 / Featured</div>
+                        <div class="pc-title">
+                            Distributed Food Delivery System<br /><span style="
                     color: var(--v3);
                     font-size: 0.65em;
                     font-family: &quot;JetBrains Mono&quot;, monospace;
                     font-weight: 400;
-                  "
-                  >// Swiggy Clone</span
-                >
-              </div>
-              <div class="pc-tags" style="margin-top: 14px">
-                <span class="pc-tag">Spring Boot</span>
-                <span class="pc-tag">Spring Cloud</span>
-                <span class="pc-tag">PostgreSQL</span>
-                <span class="pc-tag">WebSockets</span>
-                <span class="pc-tag">Docker</span>
-                <span class="pc-tag">JWT</span>
-              </div>
-            </div>
-            <div>
-              <p class="pc-desc">
-                A distributed food delivery platform built with Spring Boot
-                microservices — individual services for users, restaurants,
-                orders, payments, and delivery partners, wired together via API
-                Gateway and service discovery. Features real-time order tracking
-                over WebSockets, JWT-based authentication, and Docker
-                containerisation for scalable fault-tolerant deployment across
-                all services.
-              </p>
-              <div class="pc-tags" style="margin-top: 16px">
-                <span class="pc-tag">Microservices</span>
-                <span class="pc-tag">API Gateway</span>
-                <span class="pc-tag">Real-time Tracking</span>
-              </div>
-            </div>
-          </div>
+                  ">// Swiggy Clone</span>
+                        </div>
+                        <div class="pc-tags" style="margin-top: 14px">
+                            <span class="pc-tag">Spring Boot</span>
+                            <span class="pc-tag">Spring Cloud</span>
+                            <span class="pc-tag">PostgreSQL</span>
+                            <span class="pc-tag">WebSockets</span>
+                            <span class="pc-tag">Docker</span>
+                            <span class="pc-tag">JWT</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="pc-desc">
+                            A distributed food delivery platform built with Spring Boot
+                            microservices — individual services for users, restaurants,
+                            orders, payments, and delivery partners, wired together via API
+                            Gateway and service discovery. Features real-time order tracking
+                            over WebSockets, JWT-based authentication, and Docker
+                            containerisation for scalable fault-tolerant deployment across
+                            all services.
+                        </p>
+                        <div class="pc-tags" style="margin-top: 16px">
+                            <span class="pc-tag">Microservices</span>
+                            <span class="pc-tag">API Gateway</span>
+                            <span class="pc-tag">Real-time Tracking</span>
+                        </div>
+                        <div class="pc-links">
+                            <a href="https://github.com/AnzarMD/foodflow" target="_blank" rel="noopener" class="pc-link">
+                                <span class="s-ico">gh</span> View Code ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Card 2 -->
-          <div class="project-card reveal d1">
-            <div class="pc-num">02</div>
-            <div class="pc-title">Job Scheduling &amp; Monitoring Platform</div>
-            <p class="pc-desc">
-              A multi-tenant distributed job scheduling platform using Java
-              (Spring Boot), enabling automated execution, retry handling, and
-              real-time monitoring of cron-based tasks across tenants.
-              Implements a scalable, event-driven architecture leveraging Apache
-              Kafka, Quartz Scheduler, and Redis for asynchronous job execution,
-              fault tolerance, rate limiting, and high system reliability.
-              Full-stack cloud-native solution with React, Docker, Kubernetes,
-              and CI/CD pipelines (GitHub Actions), incorporating real-time
-              WebSocket updates and observability using Prometheus and Grafana.
-            </p>
-            <div class="pc-tags">
-              <span class="pc-tag">Spring Boot</span>
-              <span class="pc-tag">Apache Kafka</span>
-              <span class="pc-tag">Redis</span>
-              <span class="pc-tag">PostgreSQL</span>
-              <span class="pc-tag">Docker</span>
-              <span class="pc-tag">Kubernetes</span>
-              <span class="pc-tag">React</span>
-              <span class="pc-tag">WebSockets</span>
-            </div>
-          </div>
+                <!-- Card 2 -->
+                <div class="project-card reveal d1">
+                    <div class="pc-num">02</div>
+                    <div class="pc-title">Job Scheduling &amp; Monitoring Platform</div>
+                    <p class="pc-desc">
+                        A multi-tenant distributed job scheduling platform using Java
+                        (Spring Boot), enabling automated execution, retry handling, and
+                        real-time monitoring of cron-based tasks across tenants.
+                        Implements a scalable, event-driven architecture leveraging Apache
+                        Kafka, Quartz Scheduler, and Redis for asynchronous job execution,
+                        fault tolerance, rate limiting, and high system reliability.
+                        Full-stack cloud-native solution with React, Docker, Kubernetes,
+                        and CI/CD pipelines (GitHub Actions), incorporating real-time
+                        WebSocket updates and observability using Prometheus and Grafana.
+                    </p>
+                    <div class="pc-tags">
+                        <span class="pc-tag">Spring Boot</span>
+                        <span class="pc-tag">Apache Kafka</span>
+                        <span class="pc-tag">Redis</span>
+                        <span class="pc-tag">PostgreSQL</span>
+                        <span class="pc-tag">Docker</span>
+                        <span class="pc-tag">Kubernetes</span>
+                        <span class="pc-tag">React</span>
+                        <span class="pc-tag">WebSockets</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/AnzarMD/Job-scheduler-and-monitoring" target="_blank" rel="noopener" class="pc-link">
+                            <span class="s-ico">gh</span> View Code ↗
+                        </a>
+                    </div>
+                </div>
 
-          <!-- Card 3 -->
-          <div class="project-card reveal d1">
-            <div class="pc-num">03</div>
-            <div class="pc-title">Secure Federated Learning for Healthcare</div>
-            <p class="pc-desc">
-              A federated learning pipeline using PyTorch and EfficientNet that
-              trains models on distributed healthcare IoT data without
-              centralising sensitive information. Implements Differential
-              Privacy and Secure Aggregation for data confidentiality —
-              achieving stable convergence on non-IID datasets across multiple
-              clients.
-            </p>
-            <div class="pc-tags">
-              <span class="pc-tag">Python</span>
-              <span class="pc-tag">PyTorch</span>
-              <span class="pc-tag">EfficientNet</span>
-              <span class="pc-tag">Opacus</span>
-              <span class="pc-tag">Federated Learning</span>
+                <!-- Card 3 -->
+                <div class="project-card reveal d1">
+                    <div class="pc-num">03</div>
+                    <div class="pc-title">Secure Federated Learning for Healthcare</div>
+                    <p class="pc-desc">
+                        A federated learning pipeline using PyTorch and EfficientNet that
+                        trains models on distributed healthcare IoT data without
+                        centralising sensitive information. Implements Differential
+                        Privacy and Secure Aggregation for data confidentiality —
+                        achieving stable convergence on non-IID datasets across multiple
+                        clients.
+                    </p>
+                    <div class="pc-tags">
+                        <span class="pc-tag">Python</span>
+                        <span class="pc-tag">PyTorch</span>
+                        <span class="pc-tag">EfficientNet</span>
+                        <span class="pc-tag">Opacus</span>
+                        <span class="pc-tag">Federated Learning</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/AnzarMD/Secure-Federated-Learning-for-Healthcare" target="_blank" rel="noopener" class="pc-link">
+                            <span class="s-ico">gh</span> View Code ↗
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="project-card reveal d2">
+                    <div class="pc-num">04</div>
+                    <div class="pc-title">Gamified Financial Literacy Website</div>
+                    <p class="pc-desc">
+                        A TypeScript-based MERN AI web application that teaches financial
+                        literacy through interactive lessons, quizzes, and gamification.
+                        Users earn points and badges for completing modules on budgeting,
+                        investing, and credit management. Built with a type-safe React
+                        frontend, Node.js/Express backend, and MongoDB database — all
+                        written in TypeScript — and integrated with OpenAI's API for
+                        personalized learning paths.
+                    </p>
+                    <div class="pc-tags">
+                        <span class="pc-tag">TypeScript</span>
+                        <span class="pc-tag">MongoDB</span>
+                        <span class="pc-tag">Express.js</span>
+                        <span class="pc-tag">React</span>
+                        <span class="pc-tag">Node.js</span>
+                        <span class="pc-tag">REST APIs</span>
+                        <span class="pc-tag">OpenAI API</span>
+                        <span class="pc-tag">AI Integration</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/AnzarMD/FinLit" target="_blank" rel="noopener" class="pc-link">
+                            <span class="s-ico">gh</span> View Code ↗
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="project-card reveal d2">
+                    <div class="pc-num">05</div>
+                    <div class="pc-title">Travel Safety App</div>
+                    <p class="pc-desc">
+                        A MERN stack web application that provides real-time safety
+                        information for travelers. Users can view crime rates, health
+                        advisories, and emergency contacts for their destination. The app
+                        integrates OpenAI's API to offer personalized safety tips based on
+                        user profiles and travel plans.
+                    </p>
+                    <div class="pc-tags">
+                        <span class="pc-tag">MongoDB</span>
+                        <span class="pc-tag">Express.js</span>
+                        <span class="pc-tag">React</span>
+                        <span class="pc-tag">Node.js</span>
+                        <span class="pc-tag">REST APIs</span>
+                        <span class="pc-tag">Real-time Data</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/AnzarMD/Travel-Safety-Checker" target="_blank" rel="noopener" class="pc-link">
+                            <span class="s-ico">gh</span> View Code ↗
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="project-card reveal d2">
+                    <div class="pc-num">06</div>
+                    <div class="pc-title">Hospital Management Software</div>
+                    <p class="pc-desc">
+                        A full-stack MERN hospital management system handling patient
+                        records, appointment scheduling, doctor availability, and billing.
+                        RESTful APIs with Node.js/Express, MongoDB for data persistence,
+                        role-based authentication, real-time updates, and analytics
+                        dashboards for data-driven administration.
+                    </p>
+                    <div class="pc-tags">
+                        <span class="pc-tag">MongoDB</span>
+                        <span class="pc-tag">Express.js</span>
+                        <span class="pc-tag">React</span>
+                        <span class="pc-tag">Node.js</span>
+                        <span class="pc-tag">REST APIs</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/AnzarMD/HospitalManagement" target="_blank" rel="noopener" class="pc-link">
+                            <span class="s-ico">gh</span> View Code ↗
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="project-card reveal d2">
-            <div class="pc-num">04</div>
-            <div class="pc-title">Gamified Financial Literacy Website</div>
-            <p class="pc-desc">
-              A MERN stack AI web application that teaches financial literacy
-              through interactive lessons, quizzes, and gamification. Users earn
-              points and badges for completing modules on budgeting, investing,
-              and credit management. Built with React frontend, Node.js/Express
-              backend, MongoDB database, and integrated with OpenAI's API for
-              personalized learning paths.
-            </p>
-            <div class="pc-tags">
-              <span class="pc-tag">MongoDB</span>
-              <span class="pc-tag">Express.js</span>
-              <span class="pc-tag">React</span>
-              <span class="pc-tag">Node.js</span>
-              <span class="pc-tag">REST APIs</span>
-              <span class="pc-tag">OpenAI API</span>
-              <span class="pc-tag">AI Integration</span>
-            </div>
-          </div>
-          <!-- Card 5 -->
-          <div class="project-card reveal d2">
-            <div class="pc-num">05</div>
-            <div class="pc-title">Travel Safety App</div>
-            <p class="pc-desc">
-              A MERN stack web application that provides real-time safety
-              information for travelers. Users can view crime rates, health
-              advisories, and emergency contacts for their destination. The app
-              integrates OpenAI's API to offer personalized safety tips based on
-              user profiles and travel plans.
-            </p>
-            <div class="pc-tags">
-              <span class="pc-tag">MongoDB</span>
-              <span class="pc-tag">Express.js</span>
-              <span class="pc-tag">React</span>
-              <span class="pc-tag">Node.js</span>
-              <span class="pc-tag">REST APIs</span>
-              <span class="pc-tag">Real-time Data</span>
-            </div>
-          </div>
-          <!-- Card 6 -->
-          <div class="project-card reveal d2">
-            <div class="pc-num">06</div>
-            <div class="pc-title">Hospital Management Software</div>
-            <p class="pc-desc">
-              A full-stack MERN hospital management system handling patient
-              records, appointment scheduling, doctor availability, and billing.
-              RESTful APIs with Node.js/Express, MongoDB for data persistence,
-              role-based authentication, real-time updates, and analytics
-              dashboards for data-driven administration.
-            </p>
-            <div class="pc-tags">
-              <span class="pc-tag">MongoDB</span>
-              <span class="pc-tag">Express.js</span>
-              <span class="pc-tag">React</span>
-              <span class="pc-tag">Node.js</span>
-              <span class="pc-tag">REST APIs</span>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- STATS -->
     <section id="stats">
-      <div class="stats-grid">
-        <div class="stat-cell reveal">
-          <div class="stat-num sctr" data-t="93">0</div>
-          <div class="stat-label">CGPA (× 10)</div>
+        <div class="stats-grid">
+            <div class="stat-cell reveal">
+                <div class="stat-num sctr" data-t="93">0</div>
+                <div class="stat-label">CGPA (× 10)</div>
+            </div>
+            <div class="stat-cell reveal d1">
+                <div class="stat-num sctr" data-t="700">0</div>
+                <div class="stat-label">DSA Problems Solved</div>
+            </div>
+            <div class="stat-cell reveal d2">
+                <div class="stat-num">
+                    1<span style="font-size: 0.42em; vertical-align: super">st</span>
+                </div>
+                <div class="stat-label">Project Competition Win</div>
+            </div>
+            <div class="stat-cell reveal d3">
+                <div class="stat-num">
+                    2<span style="font-size: 0.42em; vertical-align: super">nd</span>
+                </div>
+                <div class="stat-label">Solo DSA Hackathon</div>
+            </div>
+            <div class="stat-cell reveal d4">
+                <div class="stat-num">
+                    4<span style="font-size: 0.6em; color: var(--v3)">★</span>
+                </div>
+                <div class="stat-label">CodeChef Rating</div>
+            </div>
         </div>
-        <div class="stat-cell reveal d1">
-          <div class="stat-num sctr" data-t="600">0</div>
-          <div class="stat-label">DSA Problems Solved</div>
-        </div>
-        <div class="stat-cell reveal d2">
-          <div class="stat-num">
-            1<span style="font-size: 0.42em; vertical-align: super">st</span>
-          </div>
-          <div class="stat-label">Project Competition Win</div>
-        </div>
-        <div class="stat-cell reveal d3">
-          <div class="stat-num">
-            2<span style="font-size: 0.42em; vertical-align: super">nd</span>
-          </div>
-          <div class="stat-label">Solo DSA Hackathon</div>
-        </div>
-      </div>
     </section>
 
     <!-- ACHIEVEMENTS -->
     <section id="achievements">
-      <div class="si">
-        <div class="sec-header reveal">
-          <div class="sec-eyebrow">Recognition</div>
-          <h2 class="sec-title">
-            Achievements <span class="vi">&amp; Awards</span>
-          </h2>
+        <div class="si">
+            <div class="sec-header reveal">
+                <div class="sec-eyebrow">Recognition</div>
+                <h2 class="sec-title">
+                    Achievements <span class="vi">&amp; Awards</span>
+                </h2>
+            </div>
+            <div class="ach-grid">
+                <div class="ach-card reveal">
+                    <div class="ach-icon-wrap">🏆</div>
+                    <div class="ach-num">// 01</div>
+                    <div class="ach-title">Intra-College Project Winner</div>
+                    <div class="ach-body">
+                        1st place in the Software Category of the Intra-College Project
+                        Competition for innovative software development and technical
+                        execution.
+                    </div>
+                </div>
+                <div class="ach-card reveal d1">
+                    <div class="ach-icon-wrap">⚡</div>
+                    <div class="ach-num">// 02</div>
+                    <div class="ach-title">700+ DSA Problems</div>
+                    <div class="ach-body">
+                        Solved 700+ problems on competitive programming platforms,
+                        building mastery in algorithms, dynamic programming, and graph
+                        theory.
+                    </div>
+                </div>
+                <div class="ach-card reveal d2">
+                    <div class="ach-icon-wrap">🥈</div>
+                    <div class="ach-num">// 03</div>
+                    <div class="ach-title">2nd Place — Solo DSA Hackathon</div>
+                    <div class="ach-body">
+                        Runner-up in a solo DSA hackathon, competing individually against
+                        teams with elite problem-solving under time pressure.
+                    </div>
+                </div>
+                <div class="ach-card reveal d3">
+                    <div class="ach-icon-wrap">🎖️</div>
+                    <div class="ach-num">// 04</div>
+                    <div class="ach-title">Multiple Gold Medals</div>
+                    <div class="ach-body">
+                        Awarded multiple Gold Medals for outstanding academic excellence
+                        at RNS Institute of Technology.
+                    </div>
+                </div>
+                <div class="ach-card reveal d4">
+                    <div class="ach-icon-wrap">⭐</div>
+                    <div class="ach-num">// 05</div>
+                    <div class="ach-title">4★ Rated on CodeChef</div>
+                    <div class="ach-body">
+                        Achieved a 4-star rating on CodeChef, placing among the top
+                        competitive programmers through consistent performance in
+                        rated contests.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="ach-grid">
-          <div class="ach-card reveal">
-            <div class="ach-icon-wrap">🏆</div>
-            <div class="ach-num">// 01</div>
-            <div class="ach-title">Intra-College Project Winner</div>
-            <div class="ach-body">
-              1st place in the Software Category of the Intra-College Project
-              Competition for innovative software development and technical
-              execution.
-            </div>
-          </div>
-          <div class="ach-card reveal d1">
-            <div class="ach-icon-wrap">⚡</div>
-            <div class="ach-num">// 02</div>
-            <div class="ach-title">600+ DSA Problems</div>
-            <div class="ach-body">
-              Solved 600+ problems on competitive programming platforms,
-              building mastery in algorithms, dynamic programming, and graph
-              theory.
-            </div>
-          </div>
-          <div class="ach-card reveal d2">
-            <div class="ach-icon-wrap">🥈</div>
-            <div class="ach-num">// 03</div>
-            <div class="ach-title">2nd Place — Solo DSA Hackathon</div>
-            <div class="ach-body">
-              Runner-up in a solo DSA hackathon, competing individually against
-              teams with elite problem-solving under time pressure.
-            </div>
-          </div>
-          <div class="ach-card reveal d3">
-            <div class="ach-icon-wrap">🎖️</div>
-            <div class="ach-num">// 04</div>
-            <div class="ach-title">Multiple Gold Medals</div>
-            <div class="ach-body">
-              Awarded multiple Gold Medals for outstanding academic excellence
-              at RNS Institute of Technology.
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <div class="sec-divider"></div>
 
     <!-- TOOLS -->
     <section id="tools">
-      <div class="si">
-        <div class="sec-header reveal">
-          <div class="sec-eyebrow">Toolkit</div>
-          <h2 class="sec-title">
-            Tools &amp; <span class="vi">Platforms</span>
-          </h2>
+        <div class="si">
+            <div class="sec-header reveal">
+                <div class="sec-eyebrow">Toolkit</div>
+                <h2 class="sec-title">
+                    Tools &amp; <span class="vi">Platforms</span>
+                </h2>
+            </div>
+            <div class="tools-wrap">
+                <div class="tool-pill reveal">
+                    <span class="tool-ico">🐳</span>
+                    <div class="tool-info">
+                        <div class="tool-name">Docker</div>
+                        <div class="tool-cat">Containerisation</div>
+                    </div>
+                </div>
+                <div class="tool-pill reveal d1">
+                    <span class="tool-ico">⚙️</span>
+                    <div class="tool-info">
+                        <div class="tool-name">GitHub Actions</div>
+                        <div class="tool-cat">CI / CD</div>
+                    </div>
+                </div>
+                <div class="tool-pill reveal d2">
+                    <span class="tool-ico">🐙</span>
+                    <div class="tool-info">
+                        <div class="tool-name">Git / GitHub</div>
+                        <div class="tool-cat">Version Control</div>
+                    </div>
+                </div>
+                <div class="tool-pill reveal d3">
+                    <span class="tool-ico">📬</span>
+                    <div class="tool-info">
+                        <div class="tool-name">Postman</div>
+                        <div class="tool-cat">API Testing</div>
+                    </div>
+                </div>
+                <div class="tool-pill reveal d1">
+                    <span class="tool-ico">🏗️</span>
+                    <div class="tool-info">
+                        <div class="tool-name">Maven</div>
+                        <div class="tool-cat">Build Tool</div>
+                    </div>
+                </div>
+                <div class="tool-pill reveal d2">
+                    <span class="tool-ico">⚡</span>
+                    <div class="tool-info">
+                        <div class="tool-name">Redis</div>
+                        <div class="tool-cat">Caching</div>
+                    </div>
+                </div>
+                <div class="tool-pill reveal d3">
+                    <span class="tool-ico">🎨</span>
+                    <div class="tool-info">
+                        <div class="tool-name">Figma</div>
+                        <div class="tool-cat">UI / UX Design</div>
+                    </div>
+                </div>
+                <div class="tool-pill reveal d4">
+                    <span class="tool-ico">🗄️</span>
+                    <div class="tool-info">
+                        <div class="tool-name">PostgreSQL</div>
+                        <div class="tool-cat">Relational DB</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tools-wrap">
-          <div class="tool-pill reveal">
-            <span class="tool-ico">🐳</span>
-            <div class="tool-info">
-              <div class="tool-name">Docker</div>
-              <div class="tool-cat">Containerisation</div>
-            </div>
-          </div>
-          <div class="tool-pill reveal d1">
-            <span class="tool-ico">⚙️</span>
-            <div class="tool-info">
-              <div class="tool-name">GitHub Actions</div>
-              <div class="tool-cat">CI / CD</div>
-            </div>
-          </div>
-          <div class="tool-pill reveal d2">
-            <span class="tool-ico">🐙</span>
-            <div class="tool-info">
-              <div class="tool-name">Git / GitHub</div>
-              <div class="tool-cat">Version Control</div>
-            </div>
-          </div>
-          <div class="tool-pill reveal d3">
-            <span class="tool-ico">📬</span>
-            <div class="tool-info">
-              <div class="tool-name">Postman</div>
-              <div class="tool-cat">API Testing</div>
-            </div>
-          </div>
-          <div class="tool-pill reveal d1">
-            <span class="tool-ico">🏗️</span>
-            <div class="tool-info">
-              <div class="tool-name">Maven</div>
-              <div class="tool-cat">Build Tool</div>
-            </div>
-          </div>
-          <div class="tool-pill reveal d2">
-            <span class="tool-ico">⚡</span>
-            <div class="tool-info">
-              <div class="tool-name">Redis</div>
-              <div class="tool-cat">Caching</div>
-            </div>
-          </div>
-          <div class="tool-pill reveal d3">
-            <span class="tool-ico">🎨</span>
-            <div class="tool-info">
-              <div class="tool-name">Figma</div>
-              <div class="tool-cat">UI / UX Design</div>
-            </div>
-          </div>
-          <div class="tool-pill reveal d4">
-            <span class="tool-ico">🗄️</span>
-            <div class="tool-info">
-              <div class="tool-name">PostgreSQL</div>
-              <div class="tool-cat">Relational DB</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <div class="sec-divider"></div>
 
     <!-- CONTACT -->
     <section id="contact">
-      <div class="si">
-        <div class="sec-header reveal">
-          <div class="sec-eyebrow">Let's Connect</div>
-          <h2 class="sec-title">Get in <span class="vi">Touch</span></h2>
-        </div>
-        <div class="contact-layout">
-          <div class="reveal">
-            <p class="contact-tagline">
-              Open to internships, collaborations, and full-time roles. If you
-              have an interesting problem to solve, I want to hear about it.
-            </p>
-            <div class="contact-details">
-              <a href="mailto:md10anzar@gmail.com" class="cd-row">
-                <div class="cd-icon">✉</div>
-                <div class="cd-info">
-                  <div class="cd-lbl">Email</div>
-                  <div class="cd-val">md10anzar@gmail.com</div>
-                </div>
-                <div class="cd-arr">↗</div>
-              </a>
-              <a href="tel:+916006520285" class="cd-row">
-                <div class="cd-icon">📞</div>
-                <div class="cd-info">
-                  <div class="cd-lbl">Phone</div>
-                  <div class="cd-val">+91 6006520285</div>
-                </div>
-                <div class="cd-arr">↗</div>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/mohammad-anzar-99b963235/"
-                target="_blank"
-                class="cd-row"
-              >
-                <div
-                  class="cd-icon"
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 0.7rem;
-                    font-weight: 600;
-                  "
-                >
-                  in
-                </div>
-                <div class="cd-info">
-                  <div class="cd-lbl">LinkedIn</div>
-                  <div class="cd-val">linkedin.com/in/md-anzar</div>
-                </div>
-                <div class="cd-arr">↗</div>
-              </a>
-              <a
-                href="https://github.com/AnzarMD"
-                target="_blank"
-                class="cd-row"
-              >
-                <div
-                  class="cd-icon"
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 0.7rem;
-                    font-weight: 600;
-                  "
-                >
-                  gh
-                </div>
-                <div class="cd-info">
-                  <div class="cd-lbl">GitHub</div>
-                  <div class="cd-val">github.com/AnzarMD</div>
-                </div>
-                <div class="cd-arr">↗</div>
-              </a>
-              <div class="cd-row" style="cursor: default">
-                <div class="cd-icon">📍</div>
-                <div class="cd-info">
-                  <div class="cd-lbl">Location</div>
-                  <div class="cd-val">Bengaluru, Karnataka, IN</div>
-                </div>
-              </div>
+        <div class="si">
+            <div class="sec-header reveal">
+                <div class="sec-eyebrow">Let's Connect</div>
+                <h2 class="sec-title">Get in <span class="vi">Touch</span></h2>
             </div>
-          </div>
+            <div class="contact-layout">
+                <div class="reveal">
+                    <p class="contact-tagline">
+                        Open to internships, collaborations, and full-time roles. If you
+                        have an interesting problem to solve, I want to hear about it.
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:md10anzar@gmail.com" class="cd-row">
+                            <div class="cd-icon">✉</div>
+                            <div class="cd-info">
+                                <div class="cd-lbl">Email</div>
+                                <div class="cd-val">md10anzar@gmail.com</div>
+                            </div>
+                            <div class="cd-arr">↗</div>
+                        </a>
+                        <a href="tel:+916006520285" class="cd-row">
+                            <div class="cd-icon">📞</div>
+                            <div class="cd-info">
+                                <div class="cd-lbl">Phone</div>
+                                <div class="cd-val">+91 6006520285</div>
+                            </div>
+                            <div class="cd-arr">↗</div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammad-anzar-99b963235/" target="_blank" class="cd-row">
+                            <div class="cd-icon" style="
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                  ">
+                                in
+                            </div>
+                            <div class="cd-info">
+                                <div class="cd-lbl">LinkedIn</div>
+                                <div class="cd-val">linkedin.com/in/md-anzar</div>
+                            </div>
+                            <div class="cd-arr">↗</div>
+                        </a>
+                        <a href="https://github.com/AnzarMD" target="_blank" class="cd-row">
+                            <div class="cd-icon" style="
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                  ">
+                                gh
+                            </div>
+                            <div class="cd-info">
+                                <div class="cd-lbl">GitHub</div>
+                                <div class="cd-val">github.com/AnzarMD</div>
+                            </div>
+                            <div class="cd-arr">↗</div>
+                        </a>
+                        <div class="cd-row" style="cursor: default">
+                            <div class="cd-icon">📍</div>
+                            <div class="cd-info">
+                                <div class="cd-lbl">Location</div>
+                                <div class="cd-val">Bengaluru, Karnataka, IN</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- CONTACT FORM -->
-          <div class="contact-form reveal d2">
-            <div class="cf-top">
-              <div class="cf-top-title">Send a Message</div>
-              <div class="cf-top-sub">→ delivers to md10anzar@gmail.com</div>
+                <!-- CONTACT FORM -->
+                <div class="contact-form reveal d2">
+                    <div class="cf-top">
+                        <div class="cf-top-title">Send a Message</div>
+                        <div class="cf-top-sub">→ delivers to md10anzar@gmail.com</div>
+                    </div>
+                    <div class="fg-2">
+                        <div class="fg">
+                            <label for="f-name">Your Name *</label>
+                            <input type="text" id="f-name" placeholder="Jane Smith" />
+                        </div>
+                        <div class="fg">
+                            <label for="f-phone">Phone Number</label>
+                            <input type="tel" id="f-phone" placeholder="+91 xxxxxxxxxx" />
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label for="f-email">Your Email *</label>
+                        <input type="email" id="f-email" placeholder="jane@company.com" />
+                    </div>
+                    <div class="fg">
+                        <label for="f-message">Message *</label>
+                        <textarea id="f-message" rows="5" placeholder="Tell me about the project or opportunity..."></textarea>
+                    </div>
+                    <div class="submit-row">
+                        <button class="submit-btn" id="submit-btn" type="button">
+                            <span id="btn-text">Send Message</span>
+                            <span id="btn-ico">→</span>
+                        </button>
+                        <div class="submit-note">Typically replies within 24h</div>
+                    </div>
+                    <div id="form-success">
+                        ✓ Message sent! Mohammad will get back to you within 24 hours.
+                    </div>
+                    <div id="form-error"></div>
+                </div>
             </div>
-            <div class="fg-2">
-              <div class="fg">
-                <label for="f-name">Your Name *</label>
-                <input type="text" id="f-name" placeholder="Jane Smith" />
-              </div>
-              <div class="fg">
-                <label for="f-phone">Phone Number</label>
-                <input type="tel" id="f-phone" placeholder="+91 xxxxxxxxxx" />
-              </div>
-            </div>
-            <div class="fg">
-              <label for="f-email">Your Email *</label>
-              <input type="email" id="f-email" placeholder="jane@company.com" />
-            </div>
-            <div class="fg">
-              <label for="f-message">Message *</label>
-              <textarea
-                id="f-message"
-                rows="5"
-                placeholder="Tell me about the project or opportunity..."
-              ></textarea>
-            </div>
-            <div class="submit-row">
-              <button class="submit-btn" id="submit-btn" type="button">
-                <span id="btn-text">Send Message</span>
-                <span id="btn-ico">→</span>
-              </button>
-              <div class="submit-note">Typically replies within 24h</div>
-            </div>
-            <div id="form-success">
-              ✓ Message sent! Mohammad will get back to you within 24 hours.
-            </div>
-            <div id="form-error"></div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-      <div class="f-logo">
-        <span class="br">[</span> M.Anzar <span class="br">]</span>
-      </div>
-      <div class="f-mid">Java Backend Developer · Bengaluru, IN · 2026</div>
-      <div class="f-right">md10anzar@gmail.com</div>
+        <div class="f-logo">
+            <span class="br">[</span> M.Anzar <span class="br">]</span>
+        </div>
+        <div class="f-mid">Java Backend Developer · Bengaluru, IN · 2026</div>
+        <div class="f-right">md10anzar@gmail.com</div>
     </footer>
+
+    <button id="to-top" aria-label="Back to top">↑</button>
 
     <script src="js/main.js"></script>
     <script src="js/config.js"></script>
     <script src="js/form.js"></script>
-  </body>
+</body>
+
 </html>
