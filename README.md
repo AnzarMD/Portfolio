@@ -1,6 +1,6 @@
 # Mohammad Anzar — Portfolio
 
-Personal portfolio website for Mohammad Anzar, a Java Backend Developer & AI Integration Engineer based in Bengaluru, India.
+Personal portfolio website.
 
 🔗 **Live:** https://anzarmd.github.io/portfolio/
 
