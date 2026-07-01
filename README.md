@@ -2,7 +2,8 @@
 
 Personal portfolio website.
 
-🔗 **Live:** https://anzarmd.github.io/portfolio/
+🔗 **Live:** https://anzarmd.github.io/Portfolio/
+
 
 ---
 
